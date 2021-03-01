@@ -1,0 +1,30 @@
+.why-us-heading {
+    text-align: center;
+    font-weight: var(--superthick-font);
+    font-size: var(--extralg-font);
+    color: var(--black);
+    background: url("https://bestbuyrdp.netlify.app/static/streak-dots-right-053cf969918287612673cbe338896b6e.svg") no-repeat scroll left top,
+    rgba(0, 0, 0, 0) url("https://bestbuyrdp.netlify.app/static/streak-dots-left-6a7a06217d9cb99454c8c06a8553083b.svg") no-repeat scroll right bottom;
+}
+
+.why-us-text {
+text-align: center;
+color: var(--grey);
+font-weight: var(--thin-font);
+margin-bottom: 100px;
+}
+
+.elem-left img {
+    height: 100px;
+    width: auto;
+    margin: 10px;
+    align-items: center;
+}
+
+.why-us-elems {
+    display: flex;
+}
+.why-us-bottom {
+    margin-left: 50px;
+    margin-right: 50px;
+}

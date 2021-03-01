@@ -1,0 +1,42 @@
+.testimonials-heading {
+    text-align: center;
+    font-weight: var(--superthick-font);
+    font-size: var(--extralg-font);
+    color: var(--black);
+}
+
+.testimonials-text {
+    text-align: center;
+    color: var(--grey);
+    font-weight: var(--thin-font);
+    margin-bottom: 100px;
+}
+
+.testimonials {
+    background-color: var(--light-blue);
+    margin: 100px;
+    padding-top: 100px;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.testimonials-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-star {
+    display: flex;
+}
+
+.testimonials-company {
+    color: var(--black);
+    font-size: var(--large-font);
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    display: flex;
+}

@@ -1,0 +1,27 @@
+.pack-button-out {
+    margin: 5px;
+    display: block;
+}
+
+.pack-button-link {
+    text-decoration: none;
+}
+
+.pack-button {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 8px;
+    font-size: var(--large-font);
+    font-weight: var(--thick-font);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.pack-button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    transition: 0.3s;
+}

@@ -1,0 +1,27 @@
+.pricing-heading {
+    text-align: center;
+    font-weight: var(--superthick-font);
+    font-size: var(--extralg-font);
+    color: var(--black);
+}
+
+.pricing-text {
+    text-align: center;
+    color: var(--grey);
+    font-weight: var(--thin-font);
+}
+
+.pricing {
+    margin-top: 100px;
+}
+
+.toggle-switch {
+    align-items: center;
+    display: flex;
+    justify-content: center;    
+    margin-top: 20px;
+}
+
+.price-bundles {
+    margin-bottom: 50px;
+}

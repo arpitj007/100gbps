@@ -1,0 +1,25 @@
+.testimonial {
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.testimonial-text {
+    color: var(--black)
+}
+
+.testimonial-client {
+    display: flex;
+}
+
+.testimonial-img {
+    height: 40px;
+    margin: 15px;
+    border-radius: 50px;
+}
+
+.testimonial-right {
+    margin: 15px;
+    color: var(--black);
+}

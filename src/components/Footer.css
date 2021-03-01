@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    margin: 100px;
+}
+
+.footer-logo {
+    height: 60px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    display: flex;
+    float: right;
+}

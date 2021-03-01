@@ -1,0 +1,119 @@
+:root {
+    --promo--text: 14px;
+    --blue: #2b00ff;
+    --white: #ecfefa;
+    --red: #db2541;
+    --green: #3CBF8A;
+    --yellow: #fcbd2b;
+    --light-blue: #F4F7FF;
+    --black: #364962;
+    --grey: rgb(117, 117, 117);
+    --small-font: 14px;
+    --medium-font: 16px;
+    --large-font: 20px;
+    --larger-font: 2rem;
+    --extralg-font: 3.2rem;
+    --medium-button-height: 30px;
+    --thin-font: 300;
+    --normal-font: 400;
+    --thick-font: 600;
+    --superthick-font: 800;
+}
+
+.banner-home-promo {
+    display: flex;
+    margin-top: 50px;
+    width: max-content;
+    padding-right: 15px;
+    margin-left: 10px;
+}
+.banner-home-promo:hover {
+    background-color: var(--white);
+    transition: 300ms;
+    border-radius: 30px;
+}
+.banner-promo-button {
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 800;
+    margin: 6px;
+    margin-left:10  px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+.banner-promo-button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    transition: 300ms;
+}
+.banner-promo-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    color: var(--blue);
+    font-size: var(--promo--text);
+}
+.banner-home-heading {
+   margin-left: 20px;
+   margin-right: 20px;
+   display: flex;
+   flex-direction: column;
+   z-index: 1;
+}
+
+.heading-fixed {
+    font-size: 350%;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.heading-text-effect {
+    font-size: 350%;
+    font-weight: 700;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.banner-text {
+    max-width: 100%;
+    width: 100%;
+    font-size: var(--large-font);
+    color: var(--grey);
+    word-spacing: 3px;
+    margin-top: 20px;
+
+}
+
+.banner {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.banner-home {
+    max-width: 60%;
+    /* align-items: left; */
+    float: left;
+}
+
+.button-medium {
+    max-width: max-content;
+    height: max-content;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: var(--white);
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 8px;
+    text-transform: capitalize;
+}
+.button-medium:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    transition: 300ms;
+}

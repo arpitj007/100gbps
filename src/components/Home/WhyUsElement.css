@@ -1,0 +1,24 @@
+.why-us-elem {
+    display: flex;
+    background-color: #f6fdff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.whyus-elem-heading {
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.whyus-elem-text {
+    color: var(--grey);
+    font-size: var(--medium-font);
+}
+
+.elem-right {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
