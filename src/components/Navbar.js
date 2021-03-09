@@ -9,7 +9,7 @@ function Navbar() {
 
     return (
        <>
-       <nav className="navbar">
+       <nav className="navbar"> 
            <div className="navbar-container">
                <div className="top-navbar">
                    <div className="top-navbar-left">
