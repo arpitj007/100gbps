@@ -1,0 +1,16 @@
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-heading {
+    font-size: var(--extralg-font);
+    margin: 20px;
+    color: var(--black);
+    font-weight: var(--superthick-font);
+}
+
+.contact-head-text {
+    font-size: var(--medium-font);
+}

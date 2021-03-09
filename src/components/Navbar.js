@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import logo from  './100gbps-logo.png'
 import './Navbar.css'
 function Navbar() {
+    const handleMouseOver = () => {
+        return 
+    }
+
     return (
        <>
        <nav className="navbar">
@@ -28,7 +32,7 @@ function Navbar() {
                     </Link>
                     <ul className="navbar-menu">
                         <Link className="link-class" to="/dedicated-server">
-                            <li className="navbar-item">Dedicated Server<i className="fas fa-angle-down"></i></li>
+                            <li className="navbar-item" onMouseOver={handleMouseOver}>Dedicated Server<i className="fas fa-angle-down"></i></li>
                         </Link>
                         <Link className="link-class" to="/reseller-program">
                             <li className="navbar-item">Reseller</li>

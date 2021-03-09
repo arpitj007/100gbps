@@ -1,5 +1,8 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './App.css';
+import About from './components/About/About';
+import ContactDetails from './components/Contact/ContactDetails';
+import ContactHeader from './components/Contact/ContactHeader';
 import Footer from './components/Footer';
 import Banner from './components/Home/Banner';
 import Coverage from './components/Home/Coverage';
@@ -19,22 +22,27 @@ function App() {
     <Router>
         <Navbar />
         <Switch>
-          <Route to="/">
-              <Banner />
-              <Filler1 />
-              <Vendors />
-              <DedicatedServer />
-              <Filler2 />
-              <Pricing />
-              <WhyUs />
-              <Testimonials />
-              <Coverage />
-              <TryUs />
+          <Route exact path="/">
+            <Banner />
+            <Filler1 />
+            <Vendors />
+            <DedicatedServer />
+            <Filler2 />
+            <Pricing />
+            <WhyUs />
+            <Testimonials />
+            <Coverage />
           </Route>
+          <Route path="/contact">
+            <ContactHeader />
+            <ContactDetails />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          
         </Switch>
-        <Switch>
-          <Route path="/" exact />
-        </Switch>
+        <TryUs />
         <Footer />
     </Router>
     </>
