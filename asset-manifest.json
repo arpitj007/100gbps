@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/100gbps/static/css/main.cec7bc01.chunk.css",
+    "main.js": "/100gbps/static/js/main.fa0a5d93.chunk.js",
+    "main.js.map": "/100gbps/static/js/main.fa0a5d93.chunk.js.map",
+    "runtime-main.js": "/100gbps/static/js/runtime-main.0dc158a9.js",
+    "runtime-main.js.map": "/100gbps/static/js/runtime-main.0dc158a9.js.map",
+    "static/js/2.bb956e1d.chunk.js": "/100gbps/static/js/2.bb956e1d.chunk.js",
+    "static/js/2.bb956e1d.chunk.js.map": "/100gbps/static/js/2.bb956e1d.chunk.js.map",
+    "static/js/3.15724b01.chunk.js": "/100gbps/static/js/3.15724b01.chunk.js",
+    "static/js/3.15724b01.chunk.js.map": "/100gbps/static/js/3.15724b01.chunk.js.map",
+    "index.html": "/100gbps/index.html",
+    "static/css/main.cec7bc01.chunk.css.map": "/100gbps/static/css/main.cec7bc01.chunk.css.map",
+    "static/js/2.bb956e1d.chunk.js.LICENSE.txt": "/100gbps/static/js/2.bb956e1d.chunk.js.LICENSE.txt",
+    "static/media/100gbps-logo.f9763f41.png": "/100gbps/static/media/100gbps-logo.f9763f41.png",
+    "static/media/cloudflare.831eb16e.svg": "/100gbps/static/media/cloudflare.831eb16e.svg",
+    "static/media/cloudlinux.932950df.svg": "/100gbps/static/media/cloudlinux.932950df.svg",
+    "static/media/cpanel.814f24d8.svg": "/100gbps/static/media/cpanel.814f24d8.svg",
+    "static/media/lets-encrypt.e9b9e3ab.svg": "/100gbps/static/media/lets-encrypt.e9b9e3ab.svg",
+    "static/media/litespeed.2b6eabc5.svg": "/100gbps/static/media/litespeed.2b6eabc5.svg",
+    "static/media/liveChat.edc0db50.svg": "/100gbps/static/media/liveChat.edc0db50.svg",
+    "static/media/more.8a4a9938.svg": "/100gbps/static/media/more.8a4a9938.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0dc158a9.js",
+    "static/js/2.bb956e1d.chunk.js",
+    "static/css/main.cec7bc01.chunk.css",
+    "static/js/main.fa0a5d93.chunk.js"
+  ]
+}
