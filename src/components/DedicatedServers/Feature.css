@@ -1,0 +1,27 @@
+.dedicated-feature-list {
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.dedicated-feature-c > i {
+    color: var(--blue);
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: var(--large-font);
+}
+
+.dedicated-feature-c {
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.dedicated-feature-c > span {
+    color: var(--black);
+    font-size: calc(var(--medium-font));
+    align-items: center;
+}

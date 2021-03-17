@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/About/About';
 import ContactDetails from './components/Contact/ContactDetails';
 import ContactHeader from './components/Contact/ContactHeader';
+import Servers from './components/DedicatedServers/Servers';
 import Footer from './components/Footer';
 import Banner from './components/Home/Banner';
 import Coverage from './components/Home/Coverage';
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/reseller-program">
+            <Servers />
           </Route>
           
         </Switch>

@@ -1,0 +1,27 @@
+.dedicated-head {
+    display: flex;
+}
+
+.dedicated-left {
+    margin: 100px;
+    
+}
+
+.dedicated-head-heading {
+    color: var(--black);
+    font-size: var(--extralg-font);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dedicated-head-text {
+    color: var(--black);
+    font-size: var(--large-font);
+    margin-bottom: 20px;
+    margin: 5px;
+}
+
+.dedicated-head-button {
+    max-width: 150px;
+}
+
