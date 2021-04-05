@@ -12,3 +12,10 @@
     margin-right: 20px;
     filter: opacity(60%)
 }
+
+@media only screen and (max-width: 480px) {
+
+    .filler-1-bottom {
+        display: none;
+    }
+}

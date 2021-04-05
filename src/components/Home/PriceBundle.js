@@ -40,7 +40,7 @@ function PriceBundle() {
     return (
         <>
             {packDetails.map((packDetail, index) => (
-                <div className="price-bundle">
+                <div key={index} className="price-bundle">
                     <p className="featured">Featured Deal</p>
                     <p className="price-per-month">$23.99<span className="pack-valadity">/mo</span></p>
                     <p className="price-pack">Starter Basic</p>

@@ -1,6 +1,11 @@
 .price-bundles {
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    
+    margin: 0 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .price-bundles {        
+        flex-direction: column;
+        margin: 0 1rem;
+    }
 }

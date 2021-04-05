@@ -1,5 +1,39 @@
-.dedicated-server-grid {
+.dropdown {
     display: flex;
+    position: absolute;
+    z-index: 1;
+    padding-top: 10px;
 }
 
+.dropdown-left {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 231, 231);
+    z-index: 2;
+}
 
+.dropdown-country:hover {
+    background-color: wheat;
+}
+
+.dropdown-country {
+    color: var(--black);
+    font-size: var(--larger-font);
+    font-weight: 400;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.dropdown-right {
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    z-index: 1;
+}
+
+.dropdown-location {
+    color: var(--black);
+    font-size: var(--medium-font);
+    font-weight: 400;
+    padding: 20px;
+}

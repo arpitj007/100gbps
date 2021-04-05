@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './App.css';
+import NotFound from './components/404/NotFound';
 import About from './components/About/About';
 import ContactDetails from './components/Contact/ContactDetails';
 import ContactHeader from './components/Contact/ContactHeader';
@@ -44,6 +45,7 @@ function App() {
           <Route path="/reseller-program">
             <Servers />
           </Route>
+          <Route component={NotFound} />
           
         </Switch>
         <TryUs />

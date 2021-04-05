@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../Home/Button'
 import Switch from '../Home/Switch'
 import './DedicatedBundle.css'
@@ -39,12 +39,19 @@ function DedicatedBundle(props) {
             link: "/about"
         }, 
     ]
+    const [value, setValue] = useState(false);
+    const toggle = () => setValue(!value)
     return (
-        <div className="dedicated-pricing-bundle">
-            <h2 className="server-location-heading">{props.heading}</h2>
-            <p className="server-location-text">100GBPS offers cheap Dedicated server pricing options across entire configuration.</p>                     
-            <p className="server-location-text">Choose what's best suited for your workload.</p>
-            <Switch />
+        <div className="pricing">
+            <h2 className="pricing-heading">Atlanta Dedicated Servers</h2>
+            <p className="pricing-text">100GBPS offers cheap Dedicated server pricing options across entire configuration.</p>                     
+            <p className="pricing-text">Choose what's best suited for your workload.</p>
+            <div className="toggle-switch">
+                        <Switch
+                        isOn = {value}
+                        handleToggle = {toggle}
+                        />
+                    </div>
             <div className="servers-config">
                 {packDetails.map((packDetail, index) => (
                 <div className="price-bundle">

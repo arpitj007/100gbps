@@ -25,3 +25,10 @@
     font-size: calc(var(--medium-font));
     align-items: center;
 }
+
+@media only screen and (max-width: 480px) {
+    .dedicated-body {
+        display: flex;
+        flex-direction: column;
+    }
+}

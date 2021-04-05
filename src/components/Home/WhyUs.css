@@ -28,3 +28,20 @@ margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
 }
+
+
+@media only screen and (max-width: 480px) {
+    .why-us-text {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .why-us-bottom {
+        margin: 2rem 1rem;
+    }
+
+    .why-us-elems {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -23,3 +23,13 @@
     margin: 15px;
     color: var(--black);
 }
+
+@media only screen and (max-width: 480px) {
+    .testimonials-text {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .testimonial {
+        margin: 1rem 0rem;
+    }
+}

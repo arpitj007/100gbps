@@ -1,0 +1,21 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-not-found {
+    display: flex;
+    flex-direction: column;
+}
+
+.not-found-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    color: var(--black);
+    font-size: var(--larger-font);
+    font-weight: 600;
+}

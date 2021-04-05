@@ -7,6 +7,7 @@
 body {
   margin: 0;
   @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+  overflow-x: hidden;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,3 +17,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --promo--text: 14px;
+  --blue: #2b00ff;
+  --white: #ffffff;
+  --red: #db2541;
+  --green: #3CBF8A;
+  --yellow: #fcbd2b;
+  --light-blue: #F4F7FF;
+  --black: #364962;
+  --grey: rgb(117, 117, 117);
+  --small-font: 14px;
+  --medium-font: 16px;
+  --large-font: 20px;
+  --larger-font: 2rem;
+  --extralg-font: 3.2rem;
+  --medium-button-height: 30px;
+  --thin-font: 300;
+  --normal-font: 400;
+  --thick-font: 600;
+  --superthick-font: 800;
+}
+

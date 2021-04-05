@@ -122,3 +122,14 @@
     color: var(--grey);
     font-weight: var(--thin-font);
 }
+
+@media only screen and (max-width: 480px) {
+    .dedicated-server-heading {
+        margin: 2rem;
+    }
+
+    .dedicated-server-text {
+        margin: 1rem 2rem;
+    }
+
+}

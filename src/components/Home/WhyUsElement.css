@@ -22,3 +22,13 @@
     display: flex;
     flex-direction: column;
 }
+
+@media only screen and (max-width: 480px) {
+    .elem-right {
+        width: 70%;
+    }
+
+    .elem-left {
+        
+    }
+}

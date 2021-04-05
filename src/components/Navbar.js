@@ -48,12 +48,15 @@ function Navbar() {
                         <img src={logo} alt="100gbps Logo"/>
                     </Link>
                     <ul className="navbar-menu">
-                        <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="navbar-item">
-                            <Link className="link-class" to="/dedicated-server">
-                            Dedicated Server<i className="fas fa-angle-down"></i>
+                        <div id="hover" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                            <Link className="link-class">
+                                <li className="navbar-item">
+                                    Dedicated Server<i className="fas fa-angle-down"></i>
+                                </li>
+                                {dropdown && <DedicatedHover />}
                             </Link>
-                        </li>
-                        {dropdown && <DedicatedHover />}
+                        </div>
+                        
                         <Link className="link-class" to="/reseller-program">
                             <li className="navbar-item">Reseller</li>
                         </Link>

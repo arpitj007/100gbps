@@ -9,6 +9,12 @@
     font-size: 14px;
 }
 
+/* .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+} */
+
 .promo-text {
     font-size: 14px;
     font-weight: 700;
@@ -132,10 +138,43 @@
     border-radius: 4px;
     padding: 8px;
     font-size: 14px;
+    margin-left: auto;
+    margin-right: 30px;
 }
 
 .button-small:hover {
     background-color: var(--white);
     color: var(--green);
     transition: 300ms;
+}
+
+.menu-icon {
+    display: none;
+}
+* {
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+    .top-navbar {
+        display: none;
+    }
+    .bottom-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .link-class {
+        display: none;
+    }
+    .navbar-logo {
+        margin: 10px;
+    }
+    .button-small {
+        display: none;
+    }
+    .menu-icon {
+        display: inline;
+        margin: 20px;
+        font-size: 2rem;
+    }
 }

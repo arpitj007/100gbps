@@ -40,3 +40,15 @@
 .testimonial-card {
     display: flex;
 }
+
+@media only screen and (max-width: 480px) {
+    .testimonials {
+        margin: 2rem 1rem;
+    }
+
+    .testimonial-card {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem, 0rem;
+    }
+}

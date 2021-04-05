@@ -1,46 +1,47 @@
 import React, { useState } from 'react'
 import './DedicatedHover.css'
+import { Link } from 'react-router-dom'
 
 
 
 export const DropdownItemsUSA = [
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Chicago',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     }
@@ -48,42 +49,42 @@ export const DropdownItemsUSA = [
 
 export const DropdownItemsEU = [
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     }
@@ -91,42 +92,42 @@ export const DropdownItemsEU = [
 
 export const DropdownItemsAPAC = [
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'APAC',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     },
     {     
-        title: 'Atlanta Dedicated Servers',
+        title: 'Atlanta',
         path: '/atlanta-dedicated-servers',
         cName: 'dedicated-dropdown-child'
     }
@@ -135,47 +136,74 @@ export const DropdownItemsAPAC = [
 
 export const DropdownItems = [
     {
-        title: "USA Dedicated Servers",
+        title: "USA",
         path: '/usa-dedicated-servers',
         cName: 'dedicated-dropdown',
-        children: DropdownItemsUSA
+        children: DropdownItemsUSA,
+        id: 'dp-usa'
     },
     {
-        title: "Europe Dedicated Servers",
+        title: "Europe",
         path: '/eu-dedicated-servers',
         cName: 'dedicated-dropdown',
-        children: DropdownItemsEU
+        children: DropdownItemsEU,
+        id: 'dp-eu'
     },
     {
-        title: "APAC Dedicated Servers",
+        title: "APAC",
         path: '/apac-dedicated-servers',
         cName: 'dedicated-dropdown',
-        children: DropdownItemsAPAC
+        children: DropdownItemsAPAC,
+        id: 'dp-apac'
     }
 ]
 
+
 function DedicatedHover() {
-
-    const [click, setClick] = useState(false);
-
-    const handleClick = () => setClick(!click)
-
+    
     return (
-        <div className="dedicated-server-grid">
-            {DropdownItems.map((item, index) => {
-                return (
-                    <div onClick={handleClick} className="dedicated-server-category">
-                        <h2 key={index} className="dedicated-item-heading">{item.title}</h2>
-                        {item.children.map((child, y) => {
-                           return (
-                               <ul className="dedicated-children">
-                                    <li className="dedicated-child">{child.title}</li>
-                               </ul>
-                           )
-                        })}
-                    </div>
-                )
-            })}
+        <div className="dropdown">
+            <div className="dropdown-left">
+                {DropdownItems.map((val, key) => {
+                    return (
+                        <Link to={val.path} key={key} id={val.id} className="dropdown-country">{val.title}</Link>
+
+                    )
+                })}
+            </div>  
+            <div className="dropdown-right">
+                <ul className="dedicated-right-locations">
+                {DropdownItemsUSA.map((val, key) => {
+                    return (
+                        <li key={key} className="dedicated-right-location">
+                            {val.title}
+                        </li>
+                    )
+                })}
+                </ul>
+            </div>
+            <div className="dropdown-right">
+                <ul className="dedicated-right-locations">
+                {DropdownItemsEU.map((val, key) => {
+                    return (
+                        <li key={key} className="dedicated-right-location">
+                            {val.title}
+                        </li>
+                    )
+                })}
+                </ul>
+            </div>
+            <div className="dropdown-right">
+                <ul className="dedicated-right-locations">
+                {DropdownItemsAPAC.map((val, key) => {
+                    return (
+                        <li key={key} className="dedicated-right-location">
+                            {val.title}
+                        </li>
+                    )
+                })}
+                </ul>
+            </div>     
         </div>
     )
 }

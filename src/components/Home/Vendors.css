@@ -26,3 +26,15 @@
     font-size: 16px;
     text-align: center;
 }
+
+@media only screen and (max-width: 480px) {
+    .vendor-div {
+        margin: 2rem 2rem
+    }
+    .vendors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
