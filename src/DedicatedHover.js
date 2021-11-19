@@ -160,19 +160,20 @@ export const DropdownItems = [
 
 
 function DedicatedHover() {
-    
-    return (
-        <div className="dropdown">
-            <div className="dropdown-left">
-                {DropdownItems.map((val, key) => {
-                    return (
-                        <Link to={val.path} key={key} id={val.id} className="dropdown-country">{val.title}</Link>
 
-                    )
-                })}
-            </div>  
-            <div className="dropdown-right">
-                <ul className="dedicated-right-locations">
+    const checkHover = (props) => {
+        if(props === 'dp-usa') {
+            return returnUSA;
+        } else if(props === 'dp-eu') {
+            console.log('eu')
+        } else {
+            console.log('apac')
+        }
+    }
+
+    const returnUSA = () => {
+        <div className="dropdown-right" >
+                <ul className="dedicated-right-locations active">
                 {DropdownItemsUSA.map((val, key) => {
                     return (
                         <li key={key} className="dedicated-right-location">
@@ -181,7 +182,20 @@ function DedicatedHover() {
                     )
                 })}
                 </ul>
-            </div>
+                </div>
+    }
+    
+    return (
+        <div className="dropdown">
+            <div className="dropdown-left">
+                {DropdownItems.map((val, key) => {
+                    return (
+                        <Link to={val.path} key={key} id={val.id}  onMouseEnter={() => checkHover(val.id)} className="dropdown-country">{val.title}</Link>
+
+                    )
+                })}
+            </div>  
+            {returnUSA}
             <div className="dropdown-right">
                 <ul className="dedicated-right-locations">
                 {DropdownItemsEU.map((val, key) => {

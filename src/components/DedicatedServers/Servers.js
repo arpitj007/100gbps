@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../Home/Button'
+import Testimonials from '../Home/Testimonials'
 import DedicatedBundle from './DedicatedBundle'
 import Feature from './Feature'
 import './Servers.css'
@@ -19,7 +20,7 @@ function Servers(props) {
                     </div>
                 </div>
                 <div className="dedicated-right">
-                    <img className="dedicated-head-image" src="https://bestbuyrdp.netlify.app/static/availability-86ce7c0bac3b96d6b55283f011cf99ff.svg" />
+                    <img className="dedicated-head-image" alt="" src="https://bestbuyrdp.netlify.app/static/availability-86ce7c0bac3b96d6b55283f011cf99ff.svg" />
                 </div>
             </div>
             <div className="dedicated-features">
@@ -28,7 +29,7 @@ function Servers(props) {
             <DedicatedBundle 
                 heading = "Cheap pricing for your needs"
             />
-            
+            <Testimonials />
         </div>
     )
 }

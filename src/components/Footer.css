@@ -65,3 +65,25 @@
     margin-top: 100px;
     color: rgba(255, 255, 255, 1) ;
 }
+
+@media only screen and (max-width: 480px) {
+    .footer {
+        margin: 1rem;
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        height: 5rem;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-heading {
+        margin-top: 1rem;
+    }
+}

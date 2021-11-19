@@ -14,3 +14,15 @@
 .contact-head-text {
     font-size: var(--medium-font);
 }
+
+@media only screen and (max-width: 480px) {
+    .contact-heading {
+        margin: 2rem;
+    }
+
+    .contact-head-text {
+        margin: 1rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}

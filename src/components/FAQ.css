@@ -52,3 +52,25 @@
     word-spacing: 2px;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 480px) {
+    .faq-content-heading {
+        text-align: center;
+    }
+
+    .faq-content {
+        padding: 1rem;
+    }
+
+    .faq-content-text {
+        text-align: center;
+    }
+
+    .faqs {
+        flex-direction: column;
+    }
+
+    .faq {
+        padding: 1rem;
+    }
+}

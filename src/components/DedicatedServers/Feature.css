@@ -31,4 +31,8 @@
         display: flex;
         flex-direction: column;
     }
+
+    .dedicated-feature-c {
+        display: inline;
+    }
 }

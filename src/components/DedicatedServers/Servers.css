@@ -1,10 +1,15 @@
 .dedicated-head {
     display: flex;
+    margin-top: 2rem;
 }
 
 .dedicated-left {
-    margin: 100px;
-    
+    margin: 5rem;
+    margin-right: 5rem;
+}
+
+.dedicated-right {
+    width: -moz-available;
 }
 
 .dedicated-head-heading {
@@ -25,3 +30,23 @@
     max-width: 150px;
 }
 
+@media only screen and (max-width: 480px) {
+    .dedicated-head {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .dedicated-left {
+        margin: 2rem;
+    }
+
+    .dedicated-right {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .dedicated-head-image {
+        max-width: -moz-available;
+    }
+    
+}
